@@ -1,0 +1,105 @@
+2019-06-16 20:37:10 info __main__ Loading Qudi...
+2019-06-16 20:37:12 debug core.manager Main thread is <sip.voidptr object at 0x00000168EDAF5DF0>
+2019-06-16 20:37:12 info core.manager load.cfg config file found at C:\Users\olgob\Desktop\qudi_diamond_lab\config\load.cfg
+2019-06-16 20:37:12 info core.manager Starting Manager configuration from C:/Users/olgob/Desktop/qudi_diamond_lab/config/cryogenic_setup_config_file.cfg
+2019-06-16 20:37:12 info core.manager Manager configuration complete.
+2019-06-16 20:37:12 debug core.threadmanager Creating thread: "rpyc-server".
+2019-06-16 20:37:12 info core.remote Started module server at localhost on port 12345
+2019-06-16 20:37:12 info core.manager Started server rpyc://localhost:12345
+2019-06-16 20:37:12 info RemoteModule/12345 server started on [127.0.0.1]:12345
+2019-06-16 20:37:12 info core.manager Qudi started.
+2019-06-16 20:37:12 info core.manager Loading module ".gui.manager.managergui"
+2019-06-16 20:37:12 info core.manager Configuring ManagerGui as man
+2019-06-16 20:37:12 debug gui.manager.managergui.ManagerGui Activation in thread <sip.voidptr object at 0x00000168EF7073A0>
+2019-06-16 20:37:14 debug gui.manager.managergui.ManagerGui IPy activation in thread <sip.voidptr object at 0x00000168EEF8E440>
+2019-06-16 20:37:14 info gui.manager.managergui.ManagerGui IPython has kernel True
+2019-06-16 20:37:14 info gui.manager.managergui.ManagerGui IPython kernel alive True
+2019-06-16 20:37:14 debug core.manager Activation success: True
+2019-06-16 20:37:14 info core.manager Loading module ".gui.trayicon"
+2019-06-16 20:37:14 info core.manager Configuring TrayIcon as tray
+2019-06-16 20:37:14 debug gui.trayicon.TrayIcon Activation in thread <sip.voidptr object at 0x00000168EF7AE9E0>
+2019-06-16 20:37:14 debug core.manager Activation success: True
+2019-06-16 20:37:14 info core.manager Loading module ".logic.taskrunner"
+2019-06-16 20:37:14 info core.manager Configuring TaskRunner as tasklogic
+2019-06-16 20:37:14 debug core.threadmanager Creating thread: "mod-logic-tasklogic".
+2019-06-16 20:37:14 debug logic.taskrunner.TaskRunner Activation in thread <sip.voidptr object at 0x00000168EF851120>
+2019-06-16 20:37:14 info core.manager Task runner registered.
+2019-06-16 20:37:14 debug core.manager Activation success: True
+2019-06-16 20:37:40 info core.manager Loading module ".logic.save_logic"
+2019-06-16 20:37:41 info core.manager Configuring SaveLogic as savelogic
+2019-06-16 20:37:41 debug core.threadmanager Creating thread: "mod-logic-savelogic".
+2019-06-16 20:37:41 debug logic.save_logic.SaveLogic Activation in thread <sip.voidptr object at 0x00000168F9E97E90>
+2019-06-16 20:37:41 info logic.save_logic.SaveLogic Creating directory for today's data in 
+C:/Data\2019\06\20190616
+2019-06-16 20:37:41 debug core.manager Activation success: True
+2019-06-16 20:37:41 info core.manager Loading module ".hardware.JPE_CPSHR3_hardware"
+2019-06-16 20:37:41 info core.manager Configuring JpeCpshr3Hardware as JPE_CPSHR3_hardware
+2019-06-16 20:37:41 debug hardware.JPE_CPSHR3_hardware.JpeCpshr3Hardware Activation in thread <sip.voidptr object at 0x00000168F2F00DA0>
+2019-06-16 20:37:41 debug core.manager Activation success: True
+2019-06-16 20:37:41 info core.manager Loading module ".logic.positioner_logic"
+2019-06-16 20:37:41 info core.manager Configuring PositionerLogic as positioner_logic
+2019-06-16 20:37:41 info core.manager Connecting logic.positioner_logic.positioner to hardware.JPE_CPSHR3_hardware
+2019-06-16 20:37:41 info core.manager Connecting logic.positioner_logic.savelogic to logic.savelogic
+2019-06-16 20:37:41 debug core.threadmanager Creating thread: "mod-logic-positioner_logic".
+2019-06-16 20:37:41 debug logic.positioner_logic.PositionerLogic Activation in thread <sip.voidptr object at 0x00000168F9EF45D0>
+2019-06-16 20:37:41 debug core.manager Activation success: True
+2019-06-16 20:37:41 info core.manager Loading module ".hardware.acquisition_card_dummy"
+2019-06-16 20:37:41 info core.manager Configuring AcquisitionCardDummy as mydummyacquisitioncard
+2019-06-16 20:37:41 debug hardware.acquisition_card_dummy.AcquisitionCardDummy Activation in thread <sip.voidptr object at 0x00000168F9EFD080>
+2019-06-16 20:37:41 debug core.manager Activation success: True
+2019-06-16 20:37:41 info core.manager Loading module ".logic.acquisition_card_logic"
+2019-06-16 20:37:41 info core.manager Configuring AcquisitionCardLogic as acquisition_card_logic
+2019-06-16 20:37:41 info core.manager Connecting logic.acquisition_card_logic.acquisition_card to hardware.mydummyacquisitioncard
+2019-06-16 20:37:41 debug core.threadmanager Creating thread: "mod-logic-acquisition_card_logic".
+2019-06-16 20:37:41 debug logic.acquisition_card_logic.AcquisitionCardLogic Activation in thread <sip.voidptr object at 0x00000168F9EFDD28>
+2019-06-16 20:37:41 debug core.manager Activation success: True
+2019-06-16 20:37:41 info core.manager Loading module ".gui.cavity_control.cavity_control_gui"
+2019-06-16 20:37:41 info core.manager Configuring CavityControlGui as cavity_control_gui
+2019-06-16 20:37:41 info core.manager Connecting gui.cavity_control_gui.positioners_logic to logic.positioner_logic
+2019-06-16 20:37:41 info core.manager Connecting gui.cavity_control_gui.acquisition_card_logic to logic.acquisition_card_logic
+2019-06-16 20:37:41 debug gui.cavity_control.cavity_control_gui.CavityControlGui Activation in thread <sip.voidptr object at 0x00000168F9EFDDA0>
+2019-06-16 20:37:41 debug core.manager Activation success: True
+2019-06-16 20:38:07 error hardware.acquisition_card_dummy.AcquisitionCardDummy No analog signal running.
+2019-06-16 20:38:11 error hardware.acquisition_card_dummy.AcquisitionCardDummy No analog signal running.
+2019-06-16 20:38:28 error hardware.acquisition_card_dummy.AcquisitionCardDummy No analog signal running.
+2019-06-16 20:38:40 info core.manager Loading module ".hardware.slow_counter_dummy"
+2019-06-16 20:38:40 info core.manager Configuring SlowCounterDummy as mydummycounter
+2019-06-16 20:38:40 debug hardware.slow_counter_dummy.SlowCounterDummy Activation in thread <sip.voidptr object at 0x00000168F9EF48A0>
+2019-06-16 20:38:40 debug core.manager Activation success: True
+2019-06-16 20:38:40 info core.manager Loading module ".logic.sample_scan_logic"
+2019-06-16 20:38:40 info core.manager Configuring SampleScanLogic as sample_scan_logic
+2019-06-16 20:38:40 info core.manager Connecting logic.sample_scan_logic.counter to hardware.mydummycounter
+2019-06-16 20:38:40 info core.manager Connecting logic.sample_scan_logic.positioner_logic to logic.positioner_logic
+2019-06-16 20:38:40 debug core.threadmanager Creating thread: "mod-logic-sample_scan_logic".
+2019-06-16 20:38:40 debug logic.sample_scan_logic.SampleScanLogic Activation in thread <sip.voidptr object at 0x00000168F9F10C38>
+2019-06-16 20:38:40 debug core.manager Activation success: True
+2019-06-16 20:38:40 info core.manager Loading module ".gui.sample_scan.sample_scan_gui"
+2019-06-16 20:38:40 info core.manager Configuring SampleScanGui as sample_scan_gui
+2019-06-16 20:38:40 info core.manager Connecting gui.sample_scan_gui.sample_scan_logic to logic.sample_scan_logic
+2019-06-16 20:38:40 debug gui.sample_scan.sample_scan_gui.SampleScanGui Activation in thread <sip.voidptr object at 0x00000168F9F10710>
+2019-06-16 20:38:40 debug core.manager Activation success: True
+2019-06-16 20:38:46 warning hardware.slow_counter_dummy.SlowCounterDummy slowcounterdummy>set_up_clock
+2019-06-16 20:38:46 warning hardware.slow_counter_dummy.SlowCounterDummy slowcounterdummy>set_up_counter
+2019-06-16 20:39:26 warning hardware.slow_counter_dummy.SlowCounterDummy slowcounterdummy>close_counter
+2019-06-16 20:39:26 warning hardware.slow_counter_dummy.SlowCounterDummy slowcounterdummy>close_clock
+2019-06-16 20:39:46 warning hardware.slow_counter_dummy.SlowCounterDummy slowcounterdummy>set_up_clock
+2019-06-16 20:39:46 warning hardware.slow_counter_dummy.SlowCounterDummy slowcounterdummy>set_up_counter
+2019-06-16 20:40:06 warning hardware.slow_counter_dummy.SlowCounterDummy slowcounterdummy>close_counter
+2019-06-16 20:40:06 warning hardware.slow_counter_dummy.SlowCounterDummy slowcounterdummy>close_clock
+2019-06-16 20:40:10 warning py.warnings C:\Users\olgob\Desktop\qudi_diamond_lab\gui\guibase.py:35: UserWarning: Every GUI module needs to reimplement the show() function!
+  warnings.warn('Every GUI module needs to reimplement the show() '
+
+2019-06-16 20:40:12 info core.manager Deactivating gui.cavity_control_gui
+2019-06-16 20:40:12 debug gui.cavity_control.cavity_control_gui.CavityControlGui Deactivation in thread <sip.voidptr object at 0x00000168F9EFD198>
+2019-06-16 20:40:12 debug core.manager Deactivation success: True
+2019-06-16 20:40:12 info core.manager load.cfg config file found at C:\Users\olgob\Desktop\qudi_diamond_lab\config\load.cfg
+2019-06-16 20:40:12 info core.manager Loading module ".gui.cavity_control.cavity_control_gui"
+2019-06-16 20:40:12 info core.manager Configuring CavityControlGui as cavity_control_gui
+2019-06-16 20:40:12 info core.manager Connecting gui.cavity_control_gui.positioners_logic to logic.positioner_logic
+2019-06-16 20:40:12 info core.manager Connecting gui.cavity_control_gui.acquisition_card_logic to logic.acquisition_card_logic
+2019-06-16 20:40:12 debug gui.cavity_control.cavity_control_gui.CavityControlGui Activation in thread <sip.voidptr object at 0x00000168F9F10710>
+2019-06-16 20:40:12 debug core.manager Activation success: True
+2019-06-16 20:40:14 warning hardware.slow_counter_dummy.SlowCounterDummy slowcounterdummy>set_up_clock
+2019-06-16 20:40:15 warning hardware.slow_counter_dummy.SlowCounterDummy slowcounterdummy>set_up_counter
+2019-06-16 20:40:33 warning hardware.slow_counter_dummy.SlowCounterDummy slowcounterdummy>close_counter
+2019-06-16 20:40:33 warning hardware.slow_counter_dummy.SlowCounterDummy slowcounterdummy>close_clock

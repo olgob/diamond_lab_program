@@ -1,0 +1,74 @@
+2019-06-16 20:48:48 info __main__ Loading Qudi...
+2019-06-16 20:48:49 debug core.manager Main thread is <sip.voidptr object at 0x000001FAD4B55E18>
+2019-06-16 20:48:50 info core.manager load.cfg config file found at C:\Users\olgob\Desktop\qudi_diamond_lab\config\load.cfg
+2019-06-16 20:48:50 info core.manager Starting Manager configuration from C:/Users/olgob/Desktop/qudi_diamond_lab/config/cryogenic_setup_config_file.cfg
+2019-06-16 20:48:50 info core.manager Manager configuration complete.
+2019-06-16 20:48:50 debug core.threadmanager Creating thread: "rpyc-server".
+2019-06-16 20:48:50 info core.remote Started module server at localhost on port 12345
+2019-06-16 20:48:50 info core.manager Started server rpyc://localhost:12345
+2019-06-16 20:48:50 info RemoteModule/12345 server started on [127.0.0.1]:12345
+2019-06-16 20:48:50 info core.manager Qudi started.
+2019-06-16 20:48:50 info core.manager Loading module ".gui.manager.managergui"
+2019-06-16 20:48:50 info core.manager Configuring ManagerGui as man
+2019-06-16 20:48:50 debug gui.manager.managergui.ManagerGui Activation in thread <sip.voidptr object at 0x000001FAD6776350>
+2019-06-16 20:48:51 debug gui.manager.managergui.ManagerGui IPy activation in thread <sip.voidptr object at 0x000001FAD600E468>
+2019-06-16 20:48:52 info gui.manager.managergui.ManagerGui IPython has kernel True
+2019-06-16 20:48:52 info gui.manager.managergui.ManagerGui IPython kernel alive True
+2019-06-16 20:48:52 debug core.manager Activation success: True
+2019-06-16 20:48:52 info core.manager Loading module ".gui.trayicon"
+2019-06-16 20:48:52 info core.manager Configuring TrayIcon as tray
+2019-06-16 20:48:52 debug gui.trayicon.TrayIcon Activation in thread <sip.voidptr object at 0x000001FAD681F990>
+2019-06-16 20:48:52 debug core.manager Activation success: True
+2019-06-16 20:48:52 info core.manager Loading module ".logic.taskrunner"
+2019-06-16 20:48:52 info core.manager Configuring TaskRunner as tasklogic
+2019-06-16 20:48:52 debug core.threadmanager Creating thread: "mod-logic-tasklogic".
+2019-06-16 20:48:52 debug logic.taskrunner.TaskRunner Activation in thread <sip.voidptr object at 0x000001FAD68C30D0>
+2019-06-16 20:48:52 info core.manager Task runner registered.
+2019-06-16 20:48:52 debug core.manager Activation success: True
+2019-06-16 20:48:53 info core.manager Loading module ".hardware.JPE_CPSHR3_hardware"
+2019-06-16 20:48:53 info core.manager Configuring JpeCpshr3Hardware as JPE_CPSHR3_hardware
+2019-06-16 20:48:53 debug hardware.JPE_CPSHR3_hardware.JpeCpshr3Hardware Activation in thread <sip.voidptr object at 0x000001FAD68C33A0>
+2019-06-16 20:48:53 debug core.manager Activation success: True
+2019-06-16 20:48:53 info core.manager Loading module ".logic.save_logic"
+2019-06-16 20:48:54 info core.manager Configuring SaveLogic as savelogic
+2019-06-16 20:48:54 debug core.threadmanager Creating thread: "mod-logic-savelogic".
+2019-06-16 20:48:54 debug logic.save_logic.SaveLogic Activation in thread <sip.voidptr object at 0x000001FAE0F38670>
+2019-06-16 20:48:54 info logic.save_logic.SaveLogic Creating directory for today's data in 
+C:/Data\2019\06\20190616
+2019-06-16 20:48:54 debug core.manager Activation success: True
+2019-06-16 20:48:54 info core.manager Loading module ".logic.positioner_logic"
+2019-06-16 20:48:54 info core.manager Configuring PositionerLogic as positioner_logic
+2019-06-16 20:48:54 info core.manager Connecting logic.positioner_logic.positioner to hardware.JPE_CPSHR3_hardware
+2019-06-16 20:48:54 info core.manager Connecting logic.positioner_logic.savelogic to logic.savelogic
+2019-06-16 20:48:54 debug core.threadmanager Creating thread: "mod-logic-positioner_logic".
+2019-06-16 20:48:54 debug logic.positioner_logic.PositionerLogic Activation in thread <sip.voidptr object at 0x000001FAD6C784B8>
+2019-06-16 20:48:54 debug core.manager Activation success: True
+2019-06-16 20:48:54 info core.manager Loading module ".hardware.acquisition_card_dummy"
+2019-06-16 20:48:54 info core.manager Configuring AcquisitionCardDummy as mydummyacquisitioncard
+2019-06-16 20:48:54 debug hardware.acquisition_card_dummy.AcquisitionCardDummy Activation in thread <sip.voidptr object at 0x000001FAD6C78558>
+2019-06-16 20:48:54 debug core.manager Activation success: True
+2019-06-16 20:48:54 info core.manager Loading module ".logic.acquisition_card_logic"
+2019-06-16 20:48:54 info core.manager Configuring AcquisitionCardLogic as acquisition_card_logic
+2019-06-16 20:48:54 info core.manager Connecting logic.acquisition_card_logic.acquisition_card to hardware.mydummyacquisitioncard
+2019-06-16 20:48:54 debug core.threadmanager Creating thread: "mod-logic-acquisition_card_logic".
+2019-06-16 20:48:54 debug logic.acquisition_card_logic.AcquisitionCardLogic Activation in thread <sip.voidptr object at 0x000001FAD681F120>
+2019-06-16 20:48:54 debug core.manager Activation success: True
+2019-06-16 20:48:54 info core.manager Loading module ".gui.cavity_control.cavity_control_gui"
+2019-06-16 20:48:54 info core.manager Configuring CavityControlGui as cavity_control_gui
+2019-06-16 20:48:54 info core.manager Connecting gui.cavity_control_gui.positioners_logic to logic.positioner_logic
+2019-06-16 20:48:54 info core.manager Connecting gui.cavity_control_gui.acquisition_card_logic to logic.acquisition_card_logic
+2019-06-16 20:48:54 debug gui.cavity_control.cavity_control_gui.CavityControlGui Activation in thread <sip.voidptr object at 0x000001FAD681F2B0>
+2019-06-16 20:48:54 debug core.manager Activation success: True
+2019-06-16 20:52:10 error hardware.acquisition_card_dummy.AcquisitionCardDummy No analog signal running.
+2019-06-16 20:52:12 error root 
+Traceback (most recent call last):
+  File "C:\Users\olgob\Desktop\qudi_diamond_lab\gui\cavity_control\cavity_control_gui.py", line 153, in start_scanner
+    self._acquisition_card_logic.start_ramp(ramp_amplitude, ramp_freq, ramp_offset)
+  File "C:\Users\olgob\Desktop\qudi_diamond_lab\logic\acquisition_card_logic.py", line 115, in start_ramp
+    signal = self.create_ramp_signal(amplitude, frequency, offset)
+  File "C:\Users\olgob\Desktop\qudi_diamond_lab\logic\acquisition_card_logic.py", line 85, in create_ramp_signal
+    samples_number = self._acquisition_card.get_clock_frequency() / frequency
+ZeroDivisionError: float division by zero
+2019-06-16 20:52:19 error hardware.acquisition_card_dummy.AcquisitionCardDummy No analog signal running.
+2019-06-16 20:52:23 error hardware.acquisition_card_dummy.AcquisitionCardDummy No analog signal running.
+2019-06-16 20:52:24 error hardware.acquisition_card_dummy.AcquisitionCardDummy No analog signal running.

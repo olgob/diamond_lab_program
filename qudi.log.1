@@ -1,0 +1,70 @@
+2019-06-16 20:52:29 info __main__ Loading Qudi...
+2019-06-16 20:52:30 debug core.manager Main thread is <sip.voidptr object at 0x000001B977A56DC8>
+2019-06-16 20:52:30 info core.manager load.cfg config file found at C:\Users\olgob\Desktop\qudi_diamond_lab\config\load.cfg
+2019-06-16 20:52:30 info core.manager Starting Manager configuration from C:/Users/olgob/Desktop/qudi_diamond_lab/config/cryogenic_setup_config_file.cfg
+2019-06-16 20:52:30 info core.manager Manager configuration complete.
+2019-06-16 20:52:30 debug core.threadmanager Creating thread: "rpyc-server".
+2019-06-16 20:52:30 info core.remote Started module server at localhost on port 12345
+2019-06-16 20:52:30 info core.manager Started server rpyc://localhost:12345
+2019-06-16 20:52:30 info RemoteModule/12345 server started on [127.0.0.1]:12345
+2019-06-16 20:52:30 info core.manager Qudi started.
+2019-06-16 20:52:30 info core.manager Loading module ".gui.manager.managergui"
+2019-06-16 20:52:31 info core.manager Configuring ManagerGui as man
+2019-06-16 20:52:31 debug gui.manager.managergui.ManagerGui Activation in thread <sip.voidptr object at 0x000001B979676378>
+2019-06-16 20:52:32 debug gui.manager.managergui.ManagerGui IPy activation in thread <sip.voidptr object at 0x000001B978F12418>
+2019-06-16 20:52:32 info gui.manager.managergui.ManagerGui IPython has kernel True
+2019-06-16 20:52:32 info gui.manager.managergui.ManagerGui IPython kernel alive True
+2019-06-16 20:52:32 debug core.manager Activation success: True
+2019-06-16 20:52:32 info core.manager Loading module ".gui.trayicon"
+2019-06-16 20:52:32 info core.manager Configuring TrayIcon as tray
+2019-06-16 20:52:32 debug gui.trayicon.TrayIcon Activation in thread <sip.voidptr object at 0x000001B97BA5E9B8>
+2019-06-16 20:52:32 debug core.manager Activation success: True
+2019-06-16 20:52:32 info core.manager Loading module ".logic.taskrunner"
+2019-06-16 20:52:32 info core.manager Configuring TaskRunner as tasklogic
+2019-06-16 20:52:32 debug core.threadmanager Creating thread: "mod-logic-tasklogic".
+2019-06-16 20:52:32 debug logic.taskrunner.TaskRunner Activation in thread <sip.voidptr object at 0x000001B9797430F8>
+2019-06-16 20:52:32 info core.manager Task runner registered.
+2019-06-16 20:52:32 debug core.manager Activation success: True
+2019-06-16 20:52:36 info core.manager Loading module ".hardware.spectrometer_dummy.andor_dummy"
+2019-06-16 20:52:36 info core.manager Configuring AndorDummy as mydummyandor
+2019-06-16 20:52:36 debug hardware.spectrometer_dummy.andor_dummy.AndorDummy Activation in thread <sip.voidptr object at 0x000001B979743300>
+2019-06-16 20:52:36 warning hardware.spectrometer_dummy.andor_dummy.AndorDummy spectrometer_andor_dummy>activation
+2019-06-16 20:52:36 debug core.manager Activation success: True
+2019-06-16 20:52:36 info core.manager Loading module ".hardware.spectrometer_dummy.shamrock_dummy"
+2019-06-16 20:52:36 info core.manager Configuring ShamrockDummy as mydummyshamrock
+2019-06-16 20:52:36 debug hardware.spectrometer_dummy.shamrock_dummy.ShamrockDummy Activation in thread <sip.voidptr object at 0x000001B9797540A8>
+2019-06-16 20:52:36 warning hardware.spectrometer_dummy.shamrock_dummy.ShamrockDummy shamrock_dummy>activation
+2019-06-16 20:52:36 debug core.manager Activation success: True
+2019-06-16 20:52:36 info core.manager Loading module ".logic.spectrometer_logic"
+2019-06-16 20:52:36 info core.manager Configuring SpectrometerLogic as spectrometer_logic
+2019-06-16 20:52:36 info core.manager Connecting logic.spectrometer_logic.andor_cam to hardware.mydummyandor
+2019-06-16 20:52:36 info core.manager Connecting logic.spectrometer_logic.shamrock_spectrometer to hardware.mydummyshamrock
+2019-06-16 20:52:36 debug core.threadmanager Creating thread: "mod-logic-spectrometer_logic".
+2019-06-16 20:52:36 debug logic.spectrometer_logic.SpectrometerLogic Activation in thread <sip.voidptr object at 0x000001B9797641E8>
+2019-06-16 20:52:36 debug core.manager Activation success: True
+2019-06-16 20:52:36 info core.manager Loading module ".gui.spectrometer.spectrometer_gui"
+2019-06-16 20:52:36 info core.manager Configuring SpectrometerGui as spectrometer_gui
+2019-06-16 20:52:36 info core.manager Connecting gui.spectrometer_gui.spectrometer_logic to logic.spectrometer_logic
+2019-06-16 20:52:36 debug gui.spectrometer.spectrometer_gui.SpectrometerGui Activation in thread <sip.voidptr object at 0x000001B979764288>
+2019-06-16 20:52:36 debug core.manager Activation success: True
+2019-06-16 20:52:41 info core.manager Loading module ".hardware.acquisition_card_dummy"
+2019-06-16 20:52:41 info core.manager Configuring AcquisitionCardDummy as mydummyacquisitioncard
+2019-06-16 20:52:41 debug hardware.acquisition_card_dummy.AcquisitionCardDummy Activation in thread <sip.voidptr object at 0x000001B979754AF8>
+2019-06-16 20:52:41 debug core.manager Activation success: True
+2019-06-16 20:52:41 info core.manager Loading module ".logic.acquisition_card_logic"
+2019-06-16 20:52:41 info core.manager Configuring AcquisitionCardLogic as acquisition_card_logic
+2019-06-16 20:52:41 info core.manager Connecting logic.acquisition_card_logic.acquisition_card to hardware.mydummyacquisitioncard
+2019-06-16 20:52:41 debug core.threadmanager Creating thread: "mod-logic-acquisition_card_logic".
+2019-06-16 20:52:41 debug logic.acquisition_card_logic.AcquisitionCardLogic Activation in thread <sip.voidptr object at 0x000001B979764E40>
+2019-06-16 20:52:41 debug core.manager Activation success: True
+2019-06-16 20:52:41 info core.manager Loading module ".logic.cavity_stability_measurement_logic"
+2019-06-16 20:52:41 info core.manager Configuring CavityStabilityMeasurementLogic as cavity_stability_measurement_logic
+2019-06-16 20:52:41 info core.manager Connecting logic.cavity_stability_measurement_logic.spectrometer_logic to logic.spectrometer_logic
+2019-06-16 20:52:41 info core.manager Connecting logic.cavity_stability_measurement_logic.acquisition_card_logic to logic.acquisition_card_logic
+2019-06-16 20:52:41 debug logic.cavity_stability_measurement_logic.CavityStabilityMeasurementLogic Activation in thread <sip.voidptr object at 0x000001B979764E68>
+2019-06-16 20:52:41 debug core.manager Activation success: True
+2019-06-16 20:52:41 info core.manager Loading module ".gui.cavity_stability_measurement.cavity_stability_measurement_gui"
+2019-06-16 20:52:41 info core.manager Configuring CavityStabilityMeasurementGui as cavity_stability_measurement_gui
+2019-06-16 20:52:41 info core.manager Connecting gui.cavity_stability_measurement_gui.cavity_stability_measurement_logic to logic.cavity_stability_measurement_logic
+2019-06-16 20:52:41 debug gui.cavity_stability_measurement.cavity_stability_measurement_gui.CavityStabilityMeasurementGui Activation in thread <sip.voidptr object at 0x000001B979AB6300>
+2019-06-16 20:52:41 debug core.manager Activation success: True
