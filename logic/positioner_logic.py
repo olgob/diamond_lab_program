@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-This module operates a confocal microsope.
+This module operates a nano positioner.
 
 Qudi is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -28,7 +28,7 @@ import os
 
 class PositionerLogic(GenericLogic):
     """
-    This is the Logic class for JPE_CPSHR3.
+    This is the Logic class for a positioner stage.
     """
     _modclass = 'JPE_CPSHR3_logic'
     _modtype = 'logic'

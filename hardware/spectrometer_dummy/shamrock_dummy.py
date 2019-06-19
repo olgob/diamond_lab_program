@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-This file contains the Qudi hardware dummy for slow counting devices.
+This file contains the Qudi hardware dummy for shamrock spectrometer.
 
 Qudi is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -25,8 +25,7 @@ from interface.empty_interface import EmptyInterface
 
 class ShamrockDummy(Base, EmptyInterface):
 
-    """This is the Interface class to define the controls for the simple
-    microwave hardware.
+    """This is the Interface class to define the controls of a spectrometer.
     """
     _modclass = 'ShamrockDummy'
     _modtype = 'hardware'

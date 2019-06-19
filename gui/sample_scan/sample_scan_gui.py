@@ -1,3 +1,24 @@
+# -*- coding: utf-8 -*-
+"""
+This module operates the graphical user interface of a 2D sample scan placed in a micro cavity
+
+Qudi is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Qudi is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Qudi. If not, see <http://www.gnu.org/licenses/>.
+
+Copyright (c) the Qudi Developers. See the COPYRIGHT.txt file at the
+top-level directory of this distribution and at <https://github.com/Ulm-IQO/qudi/>
+"""
+
 import os
 from core.module import Connector
 from gui.guibase import GUIBase
@@ -11,7 +32,7 @@ from gui.guiutils import ColorBar
 
 
 class MainWindow(QtWidgets.QMainWindow):
-    """ The main window for the ODMR measurement GUI """
+    """ The main window for the sample scan GUI """
 
     def __init__(self):
         # Get the path to the *.ui file
@@ -25,7 +46,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
 
 class SampleScanGui(GUIBase):
-    """ This is the GUI Class for cavity 2D and 3D scan measurements """
+    """ This is the GUI Class for cavity 2D scan measurements """
     _modclass = 'SampleScanGui'
     _modtype = 'gui'
     # declare QUDI connectors

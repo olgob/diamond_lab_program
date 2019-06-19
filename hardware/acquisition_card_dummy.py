@@ -21,7 +21,7 @@ from interface.empty_interface import EmptyInterface
 
 
 class AcquisitionCardDummy(Base, EmptyInterface):
-    """ """
+    """ Class for a dummy acquisition card """
 
     def __init__(self, config, **kwargs):
         super().__init__(config=config, **kwargs)
